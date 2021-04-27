@@ -1,0 +1,11 @@
+---
+- hosts: test2
+  become: yes
+#  connection: local
+  roles:
+    - samba
+#    - common
+#    - nginx
+#    - serverspec
+#    - serverspec_sample
+#    - jenkins

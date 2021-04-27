@@ -1,0 +1,11 @@
+#[development-webservers]
+#localhost
+#
+#[webservers:children]
+#development-webservers
+
+[test1]
+192.168.253.190
+
+[test2]
+192.168.253.232

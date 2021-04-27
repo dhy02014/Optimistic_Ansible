@@ -1,0 +1,7 @@
+---
+# tasks file for samba
+- name: install samba
+  yum: name=samba state=present enablerepo="base"
+
+- name: samba start
+  service: name=smb state=started enabled=yes
