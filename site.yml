@@ -1,5 +1,5 @@
 ---
-- hosts: test2
+- hosts: test1
   become: yes
 #  connection: local
   roles:
