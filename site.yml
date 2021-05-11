@@ -1,11 +1,17 @@
 ---
 - hosts: test1
   become: yes
-#  connection: local
-  roles:
-    - samba
+  gather_facts: false
+  vars_files:
+    - vart.yml
+  tasks: 
+    - name: ping "{{ kkh }}"
+      ping:  
+#  roles:
+#    - samba
 #    - common
 #    - nginx
 #    - serverspec
 #    - serverspec_sample
 #    - jenkins
+#    
