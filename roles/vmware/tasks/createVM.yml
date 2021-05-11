@@ -1,0 +1,16 @@
+---
+- name: create VM
+  vars_files:
+    - ../vars/vminfo.yml
+  vmware_guest:
+    hostname: localhost
+    gather_facts: no
+    vars_
+    tasks:
+    - name: createVM
+      hostname: 192.168.0.87
+      username: 
+      passsword: 
+      validate_certs: no
+      datacenter: 
+      
